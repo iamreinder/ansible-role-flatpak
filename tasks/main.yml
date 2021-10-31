@@ -4,6 +4,7 @@
     name: flatpak
     state: present
     update_cache: yes
+    autoremove: yes
   become: yes
 
 - name: Install Gnome Software plugin for flatpak
@@ -11,4 +12,6 @@
     name: gnome-software-plugin-flatpak
     state: present
     update_cache: yes
+    autoremove: yes
   become: yes
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
