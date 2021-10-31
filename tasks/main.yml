@@ -3,11 +3,12 @@
   apt:
     name: flatpak
     state: present
+    update_cache: yes
   become: yes
 
 - name: Install Gnome Software plugin for flatpak
   apt:
     name: gnome-software-plugin-flatpak
-    allow-remove-essential: yes
     state: present
+    update_cache: yes
   become: yes
