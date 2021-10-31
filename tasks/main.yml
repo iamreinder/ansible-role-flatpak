@@ -8,5 +8,6 @@
 - name: Install Gnome Software plugin for flatpak
   apt:
     name: gnome-software-plugin-flatpak
+    allow-remove-essential: yes
     state: present
   become: yes
