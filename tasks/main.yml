@@ -1,0 +1,12 @@
+---
+- name: Install flatpak
+  apt:
+    name: flatpak
+    state: present
+  become: yes
+
+- name: Install Gnome Software plugin for flatpak
+  apt:
+    name: gnome-software-plugin-flatpak
+    state: present
+  become: yes

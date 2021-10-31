@@ -1,0 +1,17 @@
+galaxy_info:
+  role_name: flatpak
+  author: iamreinder
+  description: Ansible role to install Flatpak on Debian-based linux distributions
+  license: MIT
+  min_ansible_version: 2.4
+  platform:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - trusty
+        - xenial
+        - bionic
+  galaxy_tags:
+    - flatpak
